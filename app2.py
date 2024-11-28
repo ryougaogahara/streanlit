@@ -1,4 +1,4 @@
-from PIL import Image, ImageFilter
+import streamlit as st
+from PIL import Image
 img = Image.open('gori.jpg')
-print(type(img))
-img.show()
+st.image(img)
