@@ -4,6 +4,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+import time
 
 st.title("Web App")
 st.write("**これがstreamlitアプリ**")
@@ -22,3 +23,13 @@ data = {
 map_data = pd.DataFrame(data)
 # 地図に散布図を描く
 st.map(map_data)
+
+
+
+value = st.slider('Select a value', 0, 100, 50) # min max default
+
+
+if st.button('start'):
+     with st.spinner('conecting...'):
+          time.sleep(3)
+          st.write('end')
