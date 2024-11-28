@@ -4,8 +4,7 @@ import streamlit as st
 st.title('Hello, Streamlit!')
  
 feedback = None
-
-
+ 
 col1, col2, _ = st.columns([1,1,8]) # 比率を指定
 # col1, col2 = st.columns(2) # 個数のみ指定
  
